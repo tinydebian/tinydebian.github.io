@@ -1,0 +1,133 @@
+
+main .intro {
+    font-size: 2rem;
+    margin-top: 2rem;
+    border: .05em dashed rgb(199, 0, 54);
+    padding: .5em 1em;
+    border-radius: 1em;
+    color: #333;
+}
+
+main .intro p {
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+main .intro p:first-letter {
+    font-size: 1.25em;
+    vertical-align: -.1em;
+    padding-right: .05em;
+}
+
+main .intro p .title-software-stack {
+    color: rgb(199, 0, 54);
+}
+
+main .product-card {
+    min-height: 350px;
+    color: #FFF;
+    background-image: none;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+main .product-card.descr-image {
+    background-position-x: 100%;
+}
+
+main .product-card.image-descr {
+    background-position-x: 0%;
+}
+
+main .product-card .descr {
+    background-color: rgb(199, 0, 54);
+    min-height: 200px;
+    padding: 1.5rem;
+}
+
+main .product-card.descr-image .descr {
+    background-position-x: 100%;
+    padding-right: 4.5rem;
+    text-align: left;
+}
+
+main .product-card.image-descr .descr {
+    background-position-x: 0%;
+    padding-left: 4.5rem;
+    text-align: right;
+}
+
+main .product-card .descr h2 {
+    font-size: 2.75rem;
+}
+
+main .product-card .descr p {
+    font-size: 2rem;
+    border-top: .2em solid #FFF;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+main .product-card .descr p a {
+    border: .1em solid #FFF;
+    border-radius: .5em;
+    font-size: 1.5rem;
+    padding: .2em .8em;
+    color: #FFF;
+}
+
+main .product-card .descr p a:hover,
+main .product-card .descr p a:active {
+    color: #FFF;
+}
+
+main .product-card .image {
+    min-height: 240px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+main .product-card.product-card-tinywifi .image {
+    background-image: url("../img/tinyWIFI-5G.png");
+}
+main .product-card.product-card-usbsniffer .image {
+    background-image: url("../img/USBSniffer.png");
+}
+main .product-card.product-card-usbcomposite .image {
+    background-image: url("../img/USBCompositeDevice.png");
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    main .product-card .image {
+        background-image: none !important;
+    }
+    main .product-card .descr {
+        background-color: transparent;
+        background-image: url("../img/bk.png");
+    }
+    main .product-card.product-card-tinywifi {
+        background-image: url("../img/tinyWIFI-5G.png");
+    }
+    main .product-card.product-card-usbsniffer {
+        background-image: url("../img/USBSniffer.png");
+    }
+    main .product-card.product-card-usbcomposite {
+        background-image: url("../img/USBCompositeDevice.png");
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

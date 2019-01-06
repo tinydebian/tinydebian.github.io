@@ -1,0 +1,270 @@
+body {
+    color: #333;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .logo-wrap {
+    font-size: 1.75rem;
+}
+
+header .logo-wrap img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    transition: all .25s;
+}
+
+header .logo-wrap img:hover {
+    transform: scale(1.02);
+    transition: all .25s;
+}
+
+/* header .logo-wrap .links {
+    font-weight: bold;
+} */
+
+header .logo-wrap .links i {
+    color: rgb(199, 0, 54);
+    transition: all .25s;
+}
+
+header .logo-wrap .links i:hover {
+    transform: scale(1.1);
+    transition: all .25s;
+}
+
+header .logo-wrap .links a {
+    color: #333;
+}
+
+header .logo-wrap .links a:hover,
+header .logo-wrap .links a:active
+{
+    color: rgb(199, 0, 54);
+    text-decoration: underline;
+}
+
+header hr {
+    border: none;
+    border-bottom: .2rem solid rgb(199, 0, 54);
+}
+
+header .email {
+    font-size: 1.75rem;
+    color: #333;
+}
+
+header .email i {
+    color: rgb(199, 0, 54);
+}
+
+header .email a {
+    color: rgb(199, 0, 54);
+    text-decoration: underline;
+}
+
+header .email a:hover,
+header .email a:active {
+    text-decoration: none; 
+}
+
+footer.main .row {
+    border-top: .1rem solid rgb(199, 0, 54);
+    font-size: 1.5rem;
+    color: rgb(199, 0, 54);
+}
+
+/* --------------------------------- */
+
+.entry {
+    border: .1rem dashed rgb(199, 0, 54);
+    border-radius: 1rem;
+}
+
+.entry .entry-title {
+    font-size: 1.75rem;
+    color: rgb(199, 0, 54);
+}
+
+.body .entry-title {
+    font-size: 2.25rem;
+    color: rgb(199, 0, 54);
+}
+
+.entry .entry-title a {
+    color: rgb(199, 0, 54);
+    text-decoration: underline;
+}
+
+.body .entry-title a {
+    color: rgb(199, 0, 54);
+    text-decoration: underline;
+}
+
+.entry .entry-title a:hover,
+.entry .entry-title a:active {
+    text-decoration: none;
+    color: rgb(199, 0, 54);
+}
+
+.body .entry-title a:hover,
+.body .entry-title a:active {
+    text-decoration: none;
+    color: rgb(199, 0, 54);
+}
+
+.entry .published {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.body .published {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.body .modified {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.entry .author {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.body .author {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.entry .author a {
+    color: rgb(199, 0, 54);
+    text-decoration: underline;
+}
+
+.body .author a {
+    color: rgb(199, 0, 54);
+    text-decoration: underline;
+}
+
+.entry .author a:hover,
+.entry .author a:active {
+    text-decoration: none;
+    color: rgb(199, 0, 54);
+}
+
+.body .author a:hover,
+.body .author a:active {
+    text-decoration: none;
+    color: rgb(199, 0, 54);
+}
+
+.entry .tags {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.body .tags {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.entry .tags a {
+    color: rgb(199, 0, 54);
+    text-decoration: underline;
+}
+
+.body .tags a {
+    color: rgb(199, 0, 54);
+    text-decoration: underline;
+}
+
+.entry .tags a:hover,
+.entry .tags a:active {
+    text-decoration: none;
+    color: rgb(199, 0, 54);
+}
+
+.body .tags a:hover,
+.body .tags a:active {
+    text-decoration: none;
+    color: rgb(199, 0, 54);
+}
+
+.entry hr {
+    border: none;
+    border-bottom: .1rem dashed #666;
+    margin: .5rem 0;
+}
+
+.body hr {
+    border: none;
+    border-bottom: .1rem dashed #666;
+    margin: 1.5rem 0;
+}
+
+.entry .entry-content {
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.entry .entry-content p,
+.entry .entry-content blockquote {
+    text-align: justify;
+}
+
+.body .entry-content {
+    font-size: 1.35rem;
+}
+
+.body .entry-content h2 {
+    border-left: .5rem solid rgb(199, 0, 54);
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.body .entry-content p {
+    padding-left: 2.5rem;
+    text-align: justify;
+    color: #333;
+}
+
+.body .entry-content a {
+    color: rgb(199, 0, 54);
+}
+
+main .story-card p a:hover,
+main .story-card p a:active {
+    color: rgb(199, 0, 54);
+}
+
+h2 span.keyword {
+    color: rgb(199, 0, 54);
+}
+
+address {
+    margin: 0;
+}
+
+/* footer.post-info {
+    border: .1rem dashed rgb(199, 0, 54);
+} */
+
+
+.btt {
+    font-size: 3rem;
+}
+
+.btt a {
+    color: #666;
+    transition: color .25s;
+}
+
+.btt a:hover,
+.btt a:active {
+    color: rgb(199, 0, 54);
+    transition: color .25s;
+}

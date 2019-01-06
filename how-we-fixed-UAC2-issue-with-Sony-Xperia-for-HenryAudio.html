@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>tinyDebian - How we fixed UAC2 issue with Sony Xperia for HenryAudio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="We specialize on USB and embedded Linux software development. We only list a small number of projects we do here. Please contact us for more details.
+        We are a small team of software engineers with a focus on developing USB based products. Please contact us if you have USB specific issues to fix or you have USB products to develop.">
+    <meta name="keywords" content="debian,embedded Linux,USB,USB Composite Device,USB Audio,RNDIS,UAC,5G Wi-Fi">
+    <meta name="google-site-verification" content="GCzWMGZfWf79oexqXP28TZb2_9t56HtUC8y6yhgg34w" />
+    <meta name="msvalidate.01" content="02E88F1A0DCEFE658AA97AC25C6CE3FC" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/theme/css/public.css">
+
+
+
+
+<meta name="tags" content="embedded Linux" />
+<meta name="tags" content="USB" />
+<meta name="tags" content="USB Audio" />
+<meta name="tags" content="UAC" />
+
+</head>
+
+<body id="index" class="home">
+    <header class="m-5">
+        <div class="container" id="top">
+            <div class="logo-wrap row align-items-center justify-content-between">
+                <div class="col-md-12 col-lg-4 text-center">
+                    <a href="/" title="tinyDebian - Home Page">
+                        <img class="w-75" src="/theme/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-md-12 col-lg-6 text-center links">
+                    <div class="row align-items-center justify-content-end">
+                        <div class="col-4">
+                            <i class="fa fa-paper-plane"></i><br><a href="/index.html#projects">Projects</a>
+                        </div>
+                        <div class="col-4">
+                            <i class="fa fa-share-alt"></i><br><a href="/stories.html">Stories</a>
+                        </div>
+                        <div class="col-4">
+                            <i class="fa fa-github"></i><br><a href="https://github.com/tinydebian/build">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-12 text-center email">
+                    Please send <i class="fa fa-envelope-o"></i> to <a href="mailto:tech@tinydebian.com">tech@tinydebian.com</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <header id="banner" class="body">
+        <h1><a href="/">tinyDebian <strong></strong></a></h1>
+    </header> -->
+    <!-- <nav id="menu">
+        <ul>
+            <li  class="active" ><a href="/category/story.html">Story</a></li>
+        </ul>
+    </nav> -->
+<section id="content" class="body container">
+  <header class="text-center">
+    <h2 class="entry-title">
+      <i class="fa fa-bookmark"></i>
+      <a href="/how-we-fixed-UAC2-issue-with-Sony-Xperia-for-HenryAudio.html" rel="bookmark" title="Permalink to How we fixed UAC2 issue with Sony Xperia for HenryAudio">
+        How we fixed UAC2 issue with Sony Xperia for HenryAudio</a></h2>
+    
+  </header>
+  <hr>
+  <footer class="post-info text-center">
+    <!-- <time class="published" datetime="2019-01-10T16:16:00+01:00">
+      Created: Thu 10 January 2019
+    </time>
+    <time class="modified" datetime="2019-01-10T16:16:00+01:00">
+      / Modified: Thu 10 January 2019
+    </time>
+ -->
+    <address class="author">
+      By       <a class="url fn" href="/author/tinydebian.html">tinyDebian</a>
+    </address>
+    <!--     <div class="category">
+        Category: <a href="/category/story.html">Story</a>
+    </div>
+ -->
+    <div class="tags">
+      Tags:
+      <a href="/tag/embedded-linux.html">embedded Linux</a>
+      <a href="/tag/usb.html">USB</a>
+      <a href="/tag/usb-audio.html">USB Audio</a>
+      <a href="/tag/uac.html">UAC</a>
+    </div>
+  </footer>
+  <hr>
+  <div class="entry-content">
+    <h2>Description of the issue:</h2>
+<p><a href="https://www.henryaudio.com" title="HenryAudio">HenryAudio</a> makes professional USB Audio device, it supports UAC2 USB Audio Class 2.0. The issue was that it did not work with Sony Xperia, it could not be detected by Sony Xperia.</p>
+<h2>Challenge:</h2>
+<p>There was no way to set a breakpoint at Sony Xperia to see the error messages. Sony Xperia is Android based, dmesg and logcat did not reveal helpful information.</p>
+<h2>Our approach:</h2>
+<p>We carefully reviewed UAC2 specification, checked and tested a bunch of changes to interface descriptors, endpoint descriptors and audio descriptors, but without luck.</p>
+<p>We finally found out that the root cause was Sony Xperia with Android 5.1.x only supported 16-bit audio, after changing firmware to support 16-bit (in addition to 24-bit audio) HenryAudio device worked fine with Sony Xperia.</p>
+  </div>
+  <div class="btt row justify-content-center m-3">
+      <div class="col-12 text-center">
+          <a href="#top"><i class="fa fa-chevron-up"></i></a>
+      </div>
+  </div>
+</section>
+    <footer class="main">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-12 text-center">&copy; 2019 tinydebian.com All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
