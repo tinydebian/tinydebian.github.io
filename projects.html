@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <title>tinyDebian - Tags</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="We specialize on USB and embedded Linux software development. We only list a small number of projects we do here. Please contact us for more details.
-        We are a small team of software engineers with a focus on developing USB based products. Please contact us if you have USB specific issues to fix or you have USB products to develop.">
+    We are a small team of software engineers with a focus on developing USB based products. Please contact us if you have USB specific issues to fix or you have USB products to develop.">
     <meta name="keywords" content="debian,embedded Linux,USB,USB Composite Device,USB Audio,RNDIS,UAC,5G Wi-Fi">
     <meta name="google-site-verification" content="GCzWMGZfWf79oexqXP28TZb2_9t56HtUC8y6yhgg34w" />
     <meta name="msvalidate.01" content="02E88F1A0DCEFE658AA97AC25C6CE3FC" />
+    <title>tinyDebian - Home Page</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -21,9 +21,10 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/theme/css/public.css">
+    <link rel="stylesheet" href="/static/css/index.css">
 </head>
 
-<body id="index" class="home">
+<body>
     <header class="m-5">
         <div class="container" id="top">
             <div class="logo-wrap row align-items-center justify-content-between">
@@ -54,24 +55,55 @@
             </div>
         </div>
     </header>
-    <!-- <header id="banner" class="body">
-        <h1><a href="/">tinyDebian <strong></strong></a></h1>
-    </header> -->
-    <!-- <nav id="menu">
-        <ul>
-            <li ><a href="/category/story.html">Story</a></li>
-        </ul>
-    </nav> -->
-    <h1>Tags for tinyDebian</h1>
-    <ul>
-        <li><a href="/tag/5g-wi-fi.html">5G Wi-Fi</a> (1)</li>
-        <li><a href="/tag/embedded-linux.html">embedded Linux</a> (4)</li>
-        <li><a href="/tag/rndis.html">RNDIS</a> (1)</li>
-        <li><a href="/tag/uac.html">UAC</a> (2)</li>
-        <li><a href="/tag/usb.html">USB</a> (4)</li>
-        <li><a href="/tag/usb-audio.html">USB Audio</a> (2)</li>
-        <li><a href="/tag/usb-composite-device.html">USB Composite Device</a> (1)</li>
-    </ul>
+    <main>
+        <div class="container" id="projects">
+            <hr>
+            <div class="product-card product-card-usbsniffer descr-image row justify-content-center">
+                <div class="col-sm-12 col-md-7 col-lg-5 descr">
+                    <h2 class="font-weight-bold text-center">USB Sniffer</h2>
+                    <p>
+                        Intercept USB traffic for<br>
+                        receipt printer.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-7 image">
+                </div>
+            </div>
+            <hr>
+            <div class="product-card product-card-usbcomposite image-descr row justify-content-center">
+                <div class="col-sm-12 col-md-7 col-lg-5 descr order-md-2">
+                    <h2 class="font-weight-bold text-center">USB Composite Device</h2>
+                    <p>
+                        USB Audio<br>
+                        USB Ethernet<br>
+                        USB Mass Storage
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-7 image order-md-1">
+                </div>
+            </div>
+            <hr>
+            <div class="product-card product-card-tinywifi descr-image row justify-content-center">
+                <div class="col-sm-12 col-md-7 col-lg-5 descr">
+                    <h2 class="font-weight-bold text-center">tinyWiFi-5GHz</h2>
+                    <p>
+                        RTL8821CS 5GHz Wi-Fi<br>
+                        USB OTG<br>
+                        eMMC<br>
+                        <a href="https://www.tindie.com/stores/tinydebian/">Buy it from tindie</a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-7 image">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </main>
+    <div class="btt row justify-content-center m-3">
+        <div class="col-12 text-center">
+            <a href="#top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+    </div>
     <footer class="main">
         <div class="container">
             <div class="row p-4">
@@ -79,6 +111,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

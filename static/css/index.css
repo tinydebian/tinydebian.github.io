@@ -97,6 +97,14 @@ main .product-card.product-card-usbcomposite .image {
     background-image: url("../img/USBCompositeDevice.png");
 }
 
+main .hide {
+    display: none;
+}
+
+main #home_videos {
+    text-align: center;
+    margin-top: 2rem;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
